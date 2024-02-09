@@ -20,13 +20,36 @@
 <body>
     <main>
         <div class="wrapper">
-            <div class="line"></div>
             <div class="line" id="line"></div>
             <picture class="picture">
                 <img src="./img/bg.jpg" alt="bg">
             </picture>
 
-            <div class="container">
+            <div class="container main__hero-wrapper">
+                <div class="main">
+                    <div class="main__hero">
+                        <picture class="main__hero-img">
+                            <source src="./img/photo.webp" type="webp">
+                            <img src="./img/photo.jpg" alt="">
+                        </picture>                        
+                        <div class="main__hero-start">
+                            <div class="hero-title">
+                                I will respect the privacy of my fellow members!
+                            </div>
+                            <div class="hero-button">
+                                <button id="hero__button" class="hero__button">
+                                    <span class="main__button-text-start">
+                                        AGREE
+                                    </span>
+                                </button>
+                            </div>
+                        </div>                                                 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="container main-content-wrapper">
                 <div class="main">
                     <div class="main__container">
                         <div class="main__header">
@@ -314,7 +337,7 @@
                                 <div class="main__header-wrapper">
                                     <div class="main__header-block">
                                         <ul class="main__header-items">
-                                            <a href="./finish/index.html" class="start-button">
+                                            <a class="start-button end__button">
                                                 <li class="main__header-item">
                                                     <span class="main__header-item-letter">
                                                         <span class="main__header-item-letter-hover">key</span>
@@ -334,7 +357,7 @@
                                                     </div>
                                                 </li>
                                             </a>
-                                            <a href="./finish/index.html" class="start-button">
+                                            <a  class="start-button end__button">
                                                 <li class="main__header-item">
                                                     <span class="main__header-item-letter">
                                                         <span class="main__header-item-letter-hover">key</span>
@@ -354,7 +377,7 @@
                                                     </div>
                                                 </li>
                                             </a>
-                                            <a href="./finish/index.html" class="start-button">
+                                            <a  class="start-button end__button">
                                                 <li class="main__header-item">
                                                     <span class="main__header-item-letter">
                                                         <span class="main__header-item-letter-hover">key</span>
@@ -376,7 +399,7 @@
                                             </a>
                                         </ul>
                                     </div>
-                                    <a href="./finish/index.html" class="main__button start__button start-button">
+                                    <a  class="main__button start__button start-button end__button">
                                         <span class="main__button-text">
                                             Submit
                                         </span>
@@ -418,7 +441,51 @@
                 </div>
 
             </div>
-        </div>
+            <!-- Main content ends -->
+
+            <!-- END SCREEN -->
+            <div class="container end__wrapper">
+                <div class="main">
+                    <div class="main__inner">
+                        <div class="main__image">
+                            <picture class="main__picture">
+                                <source srcset="img/photo.webp">
+                                <img src="img/photo.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="main__wrapper">
+                            <div class="main__header-title">
+                                <div>
+                                    <p class="big">
+                                        <strong>CONGRATULATIONS!</strong>
+                                        YOU GET👇
+                                    </p>
+                                    <span class="little">
+                                        💋 List of compatible Latin Women, which already waiting for YOU on the
+                                        Website!
+                                        <br>
+                                        💋 Welcome Bonus (20 credits)
+                                        <br>
+                                        💋 Free Registration!
+                                    </span>
+                                </div>
+                                <h1>
+                                    CLICK TO CREATE YOUR ACCOUNT
+                                </h1>
+
+                            </div>
+                            <a class="main__button start__button start-button clickButton" href="{offer_link}">
+                                <span class="main__button-text-start">
+                                    CONTINUE
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Screen ends-->
+
+        </div> <!-- Wrapper ends -->
     </main>
     <script src="./js/main.js"></script>
 
