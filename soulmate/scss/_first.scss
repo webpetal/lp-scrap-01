@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a {
+    outline: none;
+    border: none;
+    &.button {
+        font-weight: 700;
+        cursor: pointer;
+        font-family: inherit;
+        width: 100%;
+        margin: 0px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 12px 0px;
+        padding: 8px 18px;
+        min-height: 48px;
+        background-color: #ef0f16;
+        color: rgb(255, 255, 255);
+        border-radius: 4px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+    &.finish {
+        padding: 10px;
+        font-size: 28px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-height: calc(var(--vh, 1vh) * 100);
+    color: rgb(255, 255, 255);
+}
+
+$maxWidth: 1280;
+
+@mixin adaptive-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $pcSize + $addSize * 0.7;
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+    }
+    @media (min-width: 768px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
+}
+
+.picture {
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.first {
+    overflow: hidden;
+    height: 100%;
+}
+
+.time {
+    fill: white;
+}
+
+.timer {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 25px;
+    overflow: hidden;
+    height: calc(var(--vh, 1vh) * 100);
+
+    &__inner {
+        overflow: auto;
+        height: 100%;
+    }
+
+    &__picture {
+        display: block;
+        margin: 0px auto 25px;
+        max-width: 220px;
+        width: 100%;
+        height: 37vh;
+
+        & img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            margin: 0px auto;
+        }
+
+        &.finish__picture img {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__text {
+        @include adaptive-font(28, 22);
+        text-align: center;
+        font-weight: normal;
+        line-height: 24px;
+        max-width: 700px;
+        &.finish__text{
+            margin-bottom: 20px;
+        }
+
+        & p {
+            padding-bottom: 20px;
+        }
+
+        & p.small {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    &__footer {
+        position: fixed;
+        width: 100%;
+        height: 75px;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 16px;
+        background-color: rgba(255, 255, 255, 0.05);
+        box-shadow: rgba(255, 255, 255, 0.2) 0px -1px;
+    }
+
+    &__start_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+
+        &-link {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        & button {
+            width: 100%;
+        }
+
+        &-text-start {
+            font-size: 24px;
+            line-height: 28px;
+            padding: 5px 35px;
+        }
+    }
+}
+
+.desc {
+    display: none;
+}
+
+.cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    transition: 0.5s;
+    animation: pulsing 1s infinite;
+}
+
+@keyframes pulsing {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.cta:focus {
+    outline: none;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+/* span {
+    transform: skewX(15deg);
+} */
+
+span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: rgb(201, 70, 70);
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+@media (min-width: 768px) {
+    .atuin-btn:after,
+    .atuin-btn:before {
+
+        transition: all 280ms ease-in-out;
+
+}
+    .main {
+        &__footer {
+            margin-top: 20px;
+        }
+
+        &__text {
+            line-height: 32px;
+            padding-bottom: 18px;
+
+            & p.small {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+        &__button {
+            width: auto;
+            margin-top: 14px;
+        }
+
+        &__picture {
+            max-width: 300px;
+            height: 43vh;
+            & img {
+                object-position: top;
+            }
+
+            &.finish__picture img {
+                padding-bottom: 30px;
+                object-position: top;
+            }
+        }
+    }
+    a.button {
+        font-size: 34px;
+        width: fit-content;
+        padding: 13px 40px;
+    }
+    .desc {
+        display: block;
+    }
+}

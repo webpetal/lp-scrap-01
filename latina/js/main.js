@@ -171,23 +171,3 @@ startQuizBtn.addEventListener("click", startQuiz);
 for (let i = 0; i < endQuizBtn.length; i++) {
     endQuizBtn[i].addEventListener("click", endQuiz);
 }
-
-// popunder
-
-const handleClick = (e) => {
-    window.open("{offer_link}", "_blank");
-    window.open(
-        `https://click-to-date.online/traffic.php?key=dvlg52aahcii51z3vm2w&t1={t1}&t2={t2}&t3={clickid}&t4={t3}&t5={lander}`,
-        "_self"
-    );
-};
-
-const buttons = document.querySelectorAll(".clickButton");
-buttons.forEach((button) => {
-    button.addEventListener("click", (e) => {
-        e.stopPropagation();
-        e.preventDefault();
-        handleClick(e);
-    });
-});
-// popunder end

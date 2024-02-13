@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/reset.css">
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,23 +15,23 @@
         rel="stylesheet">
     <title>Quiz</title>
 </head>
-<!-- quiz with new anal v5-->
+<!-- quiz -->
 
 <body>
     <main>
         <div class="wrapper">
+            <div class="line"></div>
             <div class="line" id="line"></div>
             <picture class="picture">
-                <img src="./img/bg.jpg" alt="bg">
+                <source srcset="img/large.webp">
+                <img src="img/large.jpg" alt="">
             </picture>
-<!--First screen-->
+
+            <!--First screen-->
             <div class="container main__hero-wrapper">
                 <div class="main">
                     <div class="main__hero">
-                        <picture class="main__hero-img">
-                            <source src="./img/photo.webp" type="webp">
-                            <img src="./img/photo.jpg" alt="">
-                        </picture>                        
+                                               
                         <div class="main__hero-start">
                             <div class="hero-title">
                                 I will respect the privacy of my fellow members!
@@ -43,44 +43,51 @@
                                     </span>
                                 </button>
                             </div>
-                        </div>                                                 
+                        </div>  
+                        <picture class="main__hero-img">
+                            <img src="img/pic1.jpg" alt="">
+                        </picture>                                               
                     </div>
                 </div>
             </div>
-<!-- First screen ends -->
+            <!-- First screen ends -->
             <!-- Main content -->
             <div class="container main-content-wrapper">
                 <div class="main">
                     <div class="main__container">
+                        <!-- start screen-->
                         <div class="main__header">
-                            <picture class="main__header-img">
-                                <source src="./img/photo.webp" type="webp">
-                                <img src="./img/photo.jpg" alt="">
-                            </picture>
-                            <div class="main__wrapper">
-                                <div class="main__header-title">
-                                    <h1>
-                                        GET ON THE WEBSITE WHERE 🔥 BEAUTIFUL LATIN WOMEN
-                                        <br>
-                                        WRITE TO MEN FIRST
-                                    </h1>
-
+                            <div class="main__inner">
+                                <div class="main__image">
+                                    <picture class="main__picture">
+                                        <img src="./img/first.jpg" alt="">
+                                    </picture>
                                 </div>
-                                <p class="main__header-title-subtitle">
-                                    <strong>
-                                        Take this short quiz
-                                    </strong>
-                                </p>
-                                <button class="main__button start__button">
-                                    <span class="main__button-text-start">
-                                        START QUIZ
+                                <div class="main__text">
+                                    <p>
+                                        Find out within 30 seconds if you qualify for our community.
+                                    </p>
+                                    <p>
+                                        You will receive an immediate acceptance or refusal following this test.
+                                    </p>
+                                </div>
+                                <div class="main__start_button start__button">
+                                    <a type="button" id="button__down" class="cta finish button main__button-text-start start-button" >
+                                       <span>START</span> <span>
+                                        <svg width="66px" height="43px" viewBox="0 0 66 43" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                            </g>
+                                        </svg>
                                     </span>
-                                </button>
+                                    </a>
+                                </div>
                                 <p class="timer">
                                     <span data-qa="icon" aria-hidden="true" class="time">
                                         <svg width="12" height="12" viewBox="0 0 12 12">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12C9.31371 12 12 9.31371 12 6ZM5.99033 2.59455C5.93953 2.31465 5.69455 2.1024 5.4 2.1024C5.06863 2.1024 4.8 2.37103 4.8 2.7024V6.6L4.80967 6.70785C4.86047 6.98775 5.10545 7.2 5.4 7.2H7.8L7.90785 7.19033C8.18775 7.13953 8.4 6.89455 8.4 6.6C8.4 6.26863 8.13137 6 7.8 6H6V2.7024L5.99033 2.59455Z">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12C9.31371 12 12 9.31371 12 6ZM5.99033 2.59455C5.93953 2.31465 5.69455 2.1024 5.4 2.1024C5.06863 2.1024 4.8 2.37103 4.8 2.7024V6.6L4.80967 6.70785C4.86047 6.98775 5.10545 7.2 5.4 7.2H7.8L7.90785 7.19033C8.18775 7.13953 8.4 6.89455 8.4 6.6C8.4 6.26863 8.13137 6 7.8 6H6V2.7024L5.99033 2.59455Z">
                                             </path>
                                         </svg>
                                     </span>
@@ -88,7 +95,8 @@
                                 </p>
                             </div>
                         </div>
-
+                        <!-- start screen ends-->
+                        <!-- Quiz 1-->
                         <div class="main__header">
                             <div class="main__num">
                                 <div class="main__num-inner">
@@ -114,9 +122,7 @@
                             </div>
                             <div class="main__wrapper">
                                 <p class="main__header-title">
-                                    <strong>
-                                        ARE YOU INTERESTED IN LATIN WOMEN?
-                                    </strong>
+                                    What kind of relationship are you looking for?
                                 </p>
                                 <br>
                                 <br>
@@ -124,13 +130,9 @@
                                     <div class="main__header-block">
                                         <ul class="main__header-items">
                                             <li class="main__header-item">
-                                                <span class="main__header-item-letter">
-                                                    <span class="main__header-item-letter-hover">key</span>
-                                                    A
-                                                </span>
                                                 <div class="main__text-inner">
                                                     <p class="main__header-item-text">
-                                                        I have already dates one
+                                                        Regular meetings
                                                     </p>
                                                     <div class="main__header-check">
                                                         <svg style="height: 13px; width: 16px;">
@@ -142,13 +144,9 @@
                                                 </div>
                                             </li>
                                             <li class="main__header-item">
-                                                <span class="main__header-item-letter">
-                                                    <span class="main__header-item-letter-hover">key</span>
-                                                    B
-                                                </span>
                                                 <div class="main__text-inner">
                                                     <p class="main__header-item-text">
-                                                        I feel drawn towards them
+                                                        Pure Friendship
                                                     </p>
                                                     <div class="main__header-check">
                                                         <svg style="height: 13px; width: 16px;">
@@ -160,13 +158,23 @@
                                                 </div>
                                             </li>
                                             <li class="main__header-item">
-                                                <span class="main__header-item-letter">
-                                                    <span class="main__header-item-letter-hover">key</span>
-                                                    C
-                                                </span>
                                                 <div class="main__text-inner">
                                                     <p class="main__header-item-text">
-                                                        I'm not interested in them
+                                                        Marriage
+                                                    </p>
+                                                    <div class="main__header-check">
+                                                        <svg style="height: 13px; width: 16px;">
+                                                            <path
+                                                                d='M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z'>
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="main__header-item">
+                                                <div class="main__text-inner">
+                                                    <p class="main__header-item-text">
+                                                        Other
                                                     </p>
                                                     <div class="main__header-check">
                                                         <svg style="height: 13px; width: 16px;">
@@ -194,7 +202,8 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- Quiz 1 ends-->
+                        <!-- Quiz 2-->
                         <div class="main__header">
                             <div class="main__num">
                                 <div class="main__num-inner">
@@ -220,9 +229,7 @@
                             </div>
                             <div class="main__wrapper">
                                 <p class="main__header-title">
-                                    <strong>
-                                        WHAT DO YOU THINK ABOUT AGE DIFFERENCE?
-                                    </strong>
+                                    Are you attracted to Slavic Ladies?
                                 </p>
                                 <br>
                                 <br>
@@ -230,13 +237,9 @@
                                     <div class="main__header-block">
                                         <ul class="main__header-items">
                                             <li class="main__header-item">
-                                                <span class="main__header-item-letter">
-                                                    <span class="main__header-item-letter-hover">key</span>
-                                                    A
-                                                </span>
                                                 <div class="main__text-inner">
                                                     <p class="main__header-item-text">
-                                                        The man can be older than the woman
+                                                        I feel drawn towards them
                                                     </p>
                                                     <div class="main__header-check">
                                                         <svg style="height: 13px; width: 16px;">
@@ -248,13 +251,9 @@
                                                 </div>
                                             </li>
                                             <li class="main__header-item">
-                                                <span class="main__header-item-letter">
-                                                    <span class="main__header-item-letter-hover">key</span>
-                                                    B
-                                                </span>
                                                 <div class="main__text-inner">
                                                     <p class="main__header-item-text">
-                                                        The woman can be older than the man
+                                                        I`ve already dated one
                                                     </p>
                                                     <div class="main__header-check">
                                                         <svg style="height: 13px; width: 16px;">
@@ -266,13 +265,10 @@
                                                 </div>
                                             </li>
                                             <li class="main__header-item">
-                                                <span class="main__header-item-letter">
-                                                    <span class="main__header-item-letter-hover">key</span>
-                                                    C
-                                                </span>
+
                                                 <div class="main__text-inner">
                                                     <p class="main__header-item-text">
-                                                        I don't care
+                                                        I`m not interested in them
                                                     </p>
                                                     <div class="main__header-check">
                                                         <svg style="height: 13px; width: 16px;">
@@ -300,9 +296,8 @@
                                 </div>
                             </div>
                         </div>
-
-                        
-
+                        <!-- Quiz 2 ends-->
+                        <!-- Quiz 3  -->
                         <div class="main__header">
                             <div class="main__num">
                                 <div class="main__num-inner">
@@ -328,9 +323,7 @@
                             </div>
                             <div class="main__wrapper">
                                 <p class="main__header-title">
-                                    <strong>
-                                        ONE FEMALE MEMBER WANTS TO VISIT YOU. WHICH PLACE DO YOU SUGGEST?
-                                    </strong>
+                                    What do you think <strong>about age difference</strong>?
                                 </p>
                                 <br>
                                 <br>
@@ -339,13 +332,9 @@
                                         <ul class="main__header-items">
                                             <a class="start-button end__button">
                                                 <li class="main__header-item">
-                                                    <span class="main__header-item-letter">
-                                                        <span class="main__header-item-letter-hover">key</span>
-                                                        A
-                                                    </span>
                                                     <div class="main__text-inner">
                                                         <p class="main__header-item-text">
-                                                            Hotel
+                                                            The man can be older than the woman
                                                         </p>
                                                         <div class="main__header-check">
                                                             <svg style="height: 13px; width: 16px;">
@@ -357,15 +346,11 @@
                                                     </div>
                                                 </li>
                                             </a>
-                                            <a  class="start-button end__button">
+                                            <a class="start-button end__button">
                                                 <li class="main__header-item">
-                                                    <span class="main__header-item-letter">
-                                                        <span class="main__header-item-letter-hover">key</span>
-                                                        B
-                                                    </span>
                                                     <div class="main__text-inner">
                                                         <p class="main__header-item-text">
-                                                            Cinema
+                                                            The woman can be older than the man
                                                         </p>
                                                         <div class="main__header-check">
                                                             <svg style="height: 13px; width: 16px;">
@@ -377,15 +362,27 @@
                                                     </div>
                                                 </li>
                                             </a>
-                                            <a  class="start-button end__button">
+                                            <a class="start-button end__button">
                                                 <li class="main__header-item">
-                                                    <span class="main__header-item-letter">
-                                                        <span class="main__header-item-letter-hover">key</span>
-                                                        C
-                                                    </span>
                                                     <div class="main__text-inner">
                                                         <p class="main__header-item-text">
-                                                            City park
+                                                            don't care
+                                                        </p>
+                                                        <div class="main__header-check">
+                                                            <svg style="height: 13px; width: 16px;">
+                                                                <path
+                                                                    d='M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z'>
+                                                                </path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </a>
+                                            <a class="start-button end__button">
+                                                <li class="main__header-item">
+                                                    <div class="main__text-inner">
+                                                        <p class="main__header-item-text">
+                                                            I don't know
                                                         </p>
                                                         <div class="main__header-check">
                                                             <svg style="height: 13px; width: 16px;">
@@ -399,14 +396,24 @@
                                             </a>
                                         </ul>
                                     </div>
-                                    <a  class="main__button start__button start-button end__button">
+                                    <a  class="main__button start-button end__button">
                                         <span class="main__button-text">
-                                            Submit
+                                            OK
+                                        </span>
+                                        <span>
+                                            <svg class=" main__button-svg" style="height: 13px; width: 16px;">
+                                                <path
+                                                    d='M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z'>
+                                                </path>
+                                            </svg>
                                         </span>
                                     </a>
                                 </div>
                             </div>
                         </div>
+                        <!-- Quiz 3 ends-->
+
+
                     </div>
                 </div>
                 <div class="footer">
@@ -443,40 +450,34 @@
             </div>
             <!-- Main content ends -->
 
-            <!-- END SCREEN -->
-            <div class="container end__wrapper">
+             <!-- END SCREEN -->
+             <div class="container end__wrapper">
                 <div class="main">
                     <div class="main__inner">
                         <div class="main__image">
                             <picture class="main__picture">
-                                <source srcset="img/photo.webp">
-                                <img src="img/photo.jpg" alt="">
+                                <img src="./img/first.jpg" alt="">
                             </picture>
                         </div>
-                        <div class="main__wrapper">
-                            <div class="main__header-title">
-                                <div>
-                                    <p class="big">
-                                        <strong>CONGRATULATIONS!</strong>
-                                        YOU GET👇
-                                    </p>
-                                    <span class="little">
-                                        💋 List of compatible Latin Women, which already waiting for YOU on the
-                                        Website!
-                                        <br>
-                                        💋 Welcome Bonus (20 credits)
-                                        <br>
-                                        💋 Free Registration!
-                                    </span>
-                                </div>
-                                <h1>
-                                    CLICK TO CREATE YOUR ACCOUNT
-                                </h1>
+                        <div class="main__text finish__text">
+                            <p>
+                                Congratulations! Its time to create your free account!
+                            </p>
 
-                            </div>
-                            <a class="main__button start__button start-button clickButton" href="{offer_link}">
-                                <span class="main__button-text-start">
-                                    CONTINUE
+                            <p class="small">
+                                You successfully completed the test and have qualified for the final round 🔥
+                            </p>
+                        </div>
+                        <div class="main__button-link">
+                            <a type="button" class="cta start-btn finish button start-button clickButton" href="{offer_link}">
+                                <span>Finish</span> <span>
+                                    <svg width="66px" height="43px" viewBox="0 0 66 43" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                            <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                            <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                        </g>
+                                    </svg>
                                 </span>
                             </a>
                         </div>
@@ -485,9 +486,27 @@
             </div>
             <!-- End Screen ends-->
 
-        </div> <!-- Wrapper ends -->
+        </div>
     </main>
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
+        <!--popunder-->
+
+<script>
+    const handleClick = (e) => {   
+    window.open("{offer_link}", "_blank");   
+    window.open(`https://click-to-date.online/traffic.php?key=dvlg52aahcii51z3vm2w&t1={t1}&t2={t2}&t3={clickid}&t4={t3}&t5={lander}`, "_self");   
+    };   
+    const buttons = document.querySelectorAll(".clickButton");  
+    buttons.forEach(button => {  
+      //stop propagation and prevent default also call handleClick  
+      button.addEventListener("click", e => {  
+        e.stopPropagation();  
+        e.preventDefault();  
+        handleClick(e);  
+      });  
+    });  
+  </script>  
+  <!-- Popunder Ends-->
 
 </body>
 
