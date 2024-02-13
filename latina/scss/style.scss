@@ -644,6 +644,20 @@ $maxWidth: 1280;
   }
 }
 
+@media (max-width: 768px)  {
+  .main__hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main__hero-img {
+    max-width: 50%;
+    padding: 0;
+  }
+  .main__hero-start {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 568px) and (orientation: landscape) {
   .main__header {
     display: inline-block;
@@ -651,6 +665,13 @@ $maxWidth: 1280;
 }
 
 @media (max-width: 568px) {
+  .main__hero-img {
+    max-width: 94%;
+    padding: 0;
+  }
+  .main__hero-start {
+    max-width: 94%;
+  }
   .mob {
     display: block;
   }
